@@ -73,7 +73,7 @@ select:focus{outline:none;border-color:#888}
 
 <script>
 const DATA = [
-{id:"runtime",label:"Runtime security",groups:[
+{id:"runtime",label:"Runtime security",meta:"AI Firewall/Detection & Response",groups:[
   {label:"Deployment modes",qs:[
     {q:"API-based integration (out-of-band)",sub:"REST/webhook interception without inline traffic"},
     {q:"Inline / reverse proxy deployment",sub:"Full traffic interception with block capability"},

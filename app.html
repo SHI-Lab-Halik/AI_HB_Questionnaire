@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+## <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -81,7 +81,7 @@ select:focus{outline:none;border-color:#888}
 
 <script>
 const DATA = [
-{id:"runtime",label:"Runtime security",priority:"primary",vendors:"Lasso, Troj",meta:"AI firewall — highest priority capability",groups:[
+{id:"runtime",label:"Runtime security",priority:"primary",meta:"AI firewall — highest priority capability",groups:[
   {label:"Deployment modes",qs:[
     {q:"API-based integration (out-of-band)",sub:"REST/webhook interception without inline traffic"},
     {q:"Inline / reverse proxy deployment",sub:"Full traffic interception with block capability"},
@@ -135,7 +135,7 @@ const DATA = [
   ]},
 ]},
 
-{id:"discovery",label:"Discovery & inventory",priority:"primary",vendors:"Palo Alto AIRS, Prisma AISPM",meta:"AI app, model, agent, and API discovery",groups:[
+{id:"discovery",label:"Discovery & inventory",priority:"primary",meta:"AI app, model, agent, and API discovery",groups:[
   {label:"Application discovery",qs:[
     {q:"SaaS AI app discovery",sub:"Detect ChatGPT, Copilot, Gemini, Perplexity, etc. in use"},
     {q:"Number of AI apps in discovery catalog",sub:"How many apps identified out-of-box"},
@@ -170,7 +170,7 @@ const DATA = [
   ]},
 ]},
 
-{id:"agentic",label:"Agentic security",priority:"primary",vendors:"Zenity, Straikers, Palo Alto, Lasso",meta:"Security for autonomous AI agents",groups:[
+{id:"agentic",label:"Agentic security",priority:"primary",meta:"Security for autonomous AI agents",groups:[
   {label:"Agentic visibility",qs:[
     {q:"Agent action monitoring",sub:"Log all tool calls, API calls, decisions made by agents"},
     {q:"Agent workflow / chain visibility",sub:"Visualize multi-step agent execution"},
@@ -200,7 +200,7 @@ const DATA = [
   ]},
 ]},
 
-{id:"employee",label:"Employee AI access",priority:"secondary",vendors:"Palo Alto, Witness.ai, Prompt Security",meta:"Governing employee use of AI tools",groups:[
+{id:"employee",label:"Employee AI access",priority:"secondary",meta:"Governing employee use of AI tools",groups:[
   {label:"Policy & access governance",qs:[
     {q:"Per-user or per-group AI app access policies"},
     {q:"Allowlist / blocklist for AI applications"},
@@ -222,7 +222,7 @@ const DATA = [
   ]},
 ]},
 
-{id:"modelscan",label:"Model scanning",priority:"secondary",vendors:"HiddenLayer",meta:"Supply chain and model integrity",groups:[
+{id:"modelscan",label:"Model scanning",priority:"secondary",meta:"Supply chain and model integrity",groups:[
   {label:"Model security scanning",qs:[
     {q:"Static model file scanning",sub:"Scan .pkl, .pt, .safetensors, GGUF, etc. for malicious payloads"},
     {q:"Deserialization attack detection",sub:"Pickle exploits, arbitrary code in model files"},
@@ -239,7 +239,7 @@ const DATA = [
   ]},
 ]},
 
-{id:"aispm",label:"AI-SPM",priority:"secondary",vendors:"Wiz, Palo Alto AISPM",meta:"AI Security Posture Management",groups:[
+{id:"aispm",label:"AI-SPM",priority:"secondary",meta:"AI Security Posture Management",groups:[
   {label:"AI asset posture",qs:[
     {q:"Cloud AI service discovery",sub:"AWS Bedrock, Azure OpenAI, Vertex — what's deployed"},
     {q:"AI workload misconfiguration detection",sub:"Public exposure, weak auth, unencrypted endpoints"},
@@ -295,7 +295,7 @@ const DATA = [
   ]},
 ]},
 
-{id:"compliance",label:"Compliance",priority:"tertiary",vendors:"Credo AI, Varonis Atlas",meta:"Regulatory and framework mapping",groups:[
+{id:"compliance",label:"Compliance",priority:"tertiary",meta:"Regulatory and framework mapping",groups:[
   {label:"Framework coverage",qs:[
     {q:"OWASP LLM Top 10 mapping"},
     {q:"NIST AI RMF mapping"},

@@ -64,12 +64,7 @@ select:focus{outline:none;border-color:#888}
 
   <div class="score-bar" id="scoreBar"></div>
 
-  <div class="legend">
-    <span class="leg-item"><span class="leg-dot" style="background:#1D9E75"></span>Primary priority</span>
-    <span class="leg-item"><span class="leg-dot" style="background:#378ADD"></span>Secondary priority</span>
-    <span class="leg-item"><span class="leg-dot" style="background:#888"></span>Tertiary</span>
-  </div>
-
+  
   <div class="tabs" id="tabBar"></div>
   <div id="sections"></div>
 
@@ -81,7 +76,7 @@ select:focus{outline:none;border-color:#888}
 
 <script>
 const DATA = [
-{id:"runtime",label:"Runtime security",meta:"AI firewall — highest priority capability",groups:[
+{id:"runtime",label:"Runtime security",groups:[
   {label:"Deployment modes",qs:[
     {q:"API-based integration (out-of-band)",sub:"REST/webhook interception without inline traffic"},
     {q:"Inline / reverse proxy deployment",sub:"Full traffic interception with block capability"},
@@ -170,7 +165,7 @@ const DATA = [
   ]},
 ]},
 
-{id:"agentic",label:"Agentic security",priority:"primary",vendors:"Zenity, Straikers, Palo Alto, Lasso",meta:"Security for autonomous AI agents",groups:[
+{id:"agentic",label:"Agentic security",meta:"Security for autonomous AI agents",groups:[
   {label:"Agentic visibility",qs:[
     {q:"Agent action monitoring",sub:"Log all tool calls, API calls, decisions made by agents"},
     {q:"Agent workflow / chain visibility",sub:"Visualize multi-step agent execution"},
@@ -200,7 +195,7 @@ const DATA = [
   ]},
 ]},
 
-{id:"employee",label:"Employee AI access",priority:"secondary",vendors:"Palo Alto, Witness.ai, Prompt Security",meta:"Governing employee use of AI tools",groups:[
+{id:"employee",label:"Employee AI access",meta:"Governing employee use of AI tools",groups:[
   {label:"Policy & access governance",qs:[
     {q:"Per-user or per-group AI app access policies"},
     {q:"Allowlist / blocklist for AI applications"},
@@ -222,7 +217,7 @@ const DATA = [
   ]},
 ]},
 
-{id:"modelscan",label:"Model scanning",priority:"secondary",vendors:"HiddenLayer",meta:"Supply chain and model integrity",groups:[
+{id:"modelscan",label:"Model scanning",meta:"Supply chain and model integrity",groups:[
   {label:"Model security scanning",qs:[
     {q:"Static model file scanning",sub:"Scan .pkl, .pt, .safetensors, GGUF, etc. for malicious payloads"},
     {q:"Deserialization attack detection",sub:"Pickle exploits, arbitrary code in model files"},
@@ -239,7 +234,7 @@ const DATA = [
   ]},
 ]},
 
-{id:"aispm",label:"AI-SPM",priority:"secondary",vendors:"Wiz, Palo Alto AISPM",meta:"AI Security Posture Management",groups:[
+{id:"aispm",label:"AI-SPM",meta:"AI Security Posture Management",groups:[
   {label:"AI asset posture",qs:[
     {q:"Cloud AI service discovery",sub:"AWS Bedrock, Azure OpenAI, Vertex — what's deployed"},
     {q:"AI workload misconfiguration detection",sub:"Public exposure, weak auth, unencrypted endpoints"},
@@ -261,7 +256,7 @@ const DATA = [
   ]},
 ]},
 
-{id:"redteam",label:"Red teaming",priority:"secondary",vendors:"Troj, Lasso",meta:"Adversarial testing of AI systems",groups:[
+{id:"redteam",label:"Red teaming",meta:"Adversarial testing of AI systems",groups:[
   {label:"Attack simulation",qs:[
     {q:"Automated adversarial prompt generation"},
     {q:"Jailbreak attempt library",sub:"Coverage of known and novel jailbreak techniques"},
@@ -280,7 +275,7 @@ const DATA = [
   ]},
 ]},
 
-{id:"tprm",label:"AI TPRM",priority:"secondary",vendors:"Credo AI, Varonis Atlas",meta:"Third-party AI risk management",groups:[
+{id:"tprm",label:"AI TPRM",meta:"Third-party AI risk management",groups:[
   {label:"Vendor assessment",qs:[
     {q:"AI vendor risk questionnaire library",sub:"Pre-built questionnaires for AI providers"},
     {q:"Automated vendor assessment workflows"},
@@ -295,7 +290,7 @@ const DATA = [
   ]},
 ]},
 
-{id:"compliance",label:"Compliance",priority:"tertiary",vendors:"Credo AI, Varonis Atlas",meta:"Regulatory and framework mapping",groups:[
+{id:"compliance",label:"Compliance",meta:"Regulatory and framework mapping",groups:[
   {label:"Framework coverage",qs:[
     {q:"OWASP LLM Top 10 mapping"},
     {q:"NIST AI RMF mapping"},
@@ -315,7 +310,7 @@ const DATA = [
   ]},
 ]},
 
-{id:"integrations",label:"Integrations",priority:"tertiary",vendors:"All vendors",meta:"Ecosystem and platform integrations",groups:[
+{id:"integrations",label:"Integrations",meta:"Ecosystem and platform integrations",groups:[
   {label:"Cloud & AI platform integrations",qs:[
     {q:"AWS native integration",sub:"Bedrock, GuardDuty, Security Hub"},
     {q:"Azure native integration",sub:"Azure OpenAI, Defender, Sentinel"},

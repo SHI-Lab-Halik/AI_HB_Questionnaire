@@ -1,4 +1,4 @@
-## <!DOCTYPE html>
+
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -135,7 +135,7 @@ const DATA = [
   ]},
 ]},
 
-{id:"discovery",label:"Discovery & inventory",priority:"primary",vendors:"Palo Alto AIRS, Prisma AISPM",meta:"AI app, model, agent, and API discovery",groups:[
+{id:"discovery",label:"Discovery & inventory",meta:"AI app, model, agent, and API discovery",groups:[
   {label:"Application discovery",qs:[
     {q:"SaaS AI app discovery",sub:"Detect ChatGPT, Copilot, Gemini, Perplexity, etc. in use"},
     {q:"Number of AI apps in discovery catalog",sub:"How many apps identified out-of-box"},

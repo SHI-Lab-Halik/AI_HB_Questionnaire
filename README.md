@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+## <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -81,7 +81,7 @@ select:focus{outline:none;border-color:#888}
 
 <script>
 const DATA = [
-{id:"runtime",label:"Runtime security",priority:"primary",vendors:"Lasso, Troj",meta:"AI firewall — highest priority capability",groups:[
+{id:"runtime",label:"Runtime security",meta:"AI firewall — highest priority capability",groups:[
   {label:"Deployment modes",qs:[
     {q:"API-based integration (out-of-band)",sub:"REST/webhook interception without inline traffic"},
     {q:"Inline / reverse proxy deployment",sub:"Full traffic interception with block capability"},

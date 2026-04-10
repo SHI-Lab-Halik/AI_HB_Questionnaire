@@ -21,9 +21,6 @@ body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;c
 .section-title{font-size:16px;font-weight:500}
 .section-meta{font-size:12px;color:#666;margin-top:2px}
 .priority-badge{font-size:11px;padding:3px 8px;border-radius:8px;white-space:nowrap;flex-shrink:0}
-.p-primary{background:#E1F5EE;color:#085041}
-.p-secondary{background:#E6F1FB;color:#0C447C}
-.p-tertiary{background:#F1EFE8;color:#444}
 .q-group{margin-bottom:1.5rem;background:#fff;border:1px solid #e0e0db;border-radius:12px;padding:1rem 1.25rem}
 .q-group-label{font-size:11px;font-weight:500;color:#888;margin-bottom:10px;text-transform:uppercase;letter-spacing:.04em}
 .q-row{display:grid;grid-template-columns:1fr auto;gap:12px;align-items:start;padding:10px 0;border-bottom:1px solid #f0f0ec}

@@ -56,7 +56,7 @@ select:focus{outline:none;border-color:#888}
 <div class="wrap">
   <div class="header">
     <h1>AI security capability questionnaire</h1>
-    <p>Score each capability: Full / Partial / Roadmap / Not supported. Use notes for vendor-specific detail.</p>
+    <p>Score each capability: Full / Partial / Roadmap / Not supported. Use notes to add detail about the capability.</p>
   </div>
 
   <div class="score-bar" id="scoreBar"></div>
@@ -422,7 +422,7 @@ function resetAll(){
 }
 
 function exportCSV(){
-  let rows=["Section,Priority,Group,Question,Sub-text,Response,Notes"];
+  let rows=["Section,Group,Question,Sub-text,Response,Notes"];
   DATA.forEach(s=>{
     s.groups.forEach(g=>{
       g.qs.forEach((q,i)=>{
